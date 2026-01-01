@@ -1,0 +1,21 @@
+{
+    "weekly": {
+        "instrument_key": "NSE_FO|40476",
+        "qty": 65,
+        "side": "SELL",
+        "strike": 26150.0,
+        "entry_price": 71.75,
+        "expiry_dt": "2026-01-06",
+        "type": "p"
+    },
+    "monthly": {
+        "instrument_key": "NSE_FO|64936",
+        "qty": 65,
+        "side": "BUY",
+        "strike": 26450.0,
+        "entry_price": 409.05,
+        "expiry_dt": "2026-02-24",
+        "type": "p"
+    },
+    "last_rollover_date": null
+}
