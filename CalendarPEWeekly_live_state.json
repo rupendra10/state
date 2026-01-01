@@ -14,7 +14,7 @@
         "side": "BUY",
         "strike": 26450.0,
         "entry_price": 409.05,
-        "expiry_dt": "N/A",
+        "expiry_dt": "2026-02-24",
         "type": "p"
     },
     "last_rollover_date": null
