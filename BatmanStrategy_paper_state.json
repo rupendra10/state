@@ -1,4 +1,21 @@
 {
-    "positions": [],
+    "positions": [
+        {
+            "instrument_key": "C_24500",
+            "qty": 50,
+            "side": "BUY",
+            "leg": "CE_WING",
+            "strike": 24500,
+            "type": "c"
+        },
+        {
+            "instrument_key": "C_24700",
+            "qty": 100,
+            "side": "SELL",
+            "leg": "CE_CORE",
+            "strike": 24700,
+            "type": "c"
+        }
+    ],
     "adjustment_count": 0
 }
