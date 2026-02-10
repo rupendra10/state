@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+
+# Environment & Secrets
+.env
+env.txt
+requirements.txt.bak
+
+# Logs
+event_log.txt
+execution.log
+*.log
+
+# VS Code
+.vscode/
+
+# System
+Thumbs.db
