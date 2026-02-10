@@ -1,15 +1,12 @@
 {
     "positions": [
         {
-            "leg": "CE_CORE_ADJ",
-            "strike": 24100,
-            "qty": 100,
-            "type": "c",
-            "side": "SELL",
-            "entry_price": 100.0,
-            "delta": 0.35,
-            "expiry_dt": "2026-02-10",
-            "instrument_key": "C_24100"
+            "instrument_key": "TEST_KEY",
+            "qty": 50,
+            "side": "BUY",
+            "leg": "TEST",
+            "strike": 10000,
+            "type": "c"
         }
     ],
     "adjustment_count": 1
