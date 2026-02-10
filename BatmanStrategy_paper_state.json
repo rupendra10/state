@@ -7,7 +7,7 @@
             "type": "c",
             "side": "BUY",
             "entry_price": 100.0,
-            "delta": 0.04999999999999999,
+            "delta": 0.01,
             "expiry_dt": "2026-02-10",
             "instrument_key": "C_24900"
         },
@@ -29,7 +29,7 @@
             "type": "c",
             "side": "BUY",
             "entry_price": 100.0,
-            "delta": 0.45,
+            "delta": 0.35,
             "expiry_dt": "2026-02-10",
             "instrument_key": "C_24100"
         },
@@ -45,17 +45,6 @@
             "instrument_key": "P_23900"
         },
         {
-            "leg": "CE_CORE",
-            "strike": 24200,
-            "qty": 100,
-            "type": "c",
-            "side": "SELL",
-            "entry_price": 100.0,
-            "delta": 0.4,
-            "expiry_dt": "2026-02-10",
-            "instrument_key": "C_24200"
-        },
-        {
             "leg": "PE_CORE",
             "strike": 23800,
             "qty": 100,
@@ -65,7 +54,18 @@
             "delta": 0.4,
             "expiry_dt": "2026-02-10",
             "instrument_key": "P_23800"
+        },
+        {
+            "leg": "CE_CORE_ADJ",
+            "strike": 24100,
+            "qty": 100,
+            "type": "c",
+            "side": "SELL",
+            "entry_price": 100.0,
+            "delta": 0.35,
+            "expiry_dt": "2026-02-10",
+            "instrument_key": "C_24100"
         }
     ],
-    "adjustment_count": 0
+    "adjustment_count": 1
 }
