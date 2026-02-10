@@ -1,20 +1,23 @@
 {
     "weekly": {
-        "instrument_key": "NSE_FO|40476",
-        "qty": 65,
-        "side": "SELL",
-        "strike": 26150.0,
-        "entry_price": 71.75,
-        "expiry_dt": "2026-01-06",
-        "type": "p"
+        "leg": "weekly_sell",
+        "strike": 25100.0,
+        "expiry": 0.020204347130073567,
+        "iv": 0.14556884765625,
+        "delta": -0.5051,
+        "entry_spot": 25063.0,
+        "instrument_key": "NSE_FO|42505",
+        "entry_price": 0.0,
+        "type": "p",
+        "expiry_dt": "2026-02-10"
     },
     "monthly": {
-        "instrument_key": "NSE_FO|64936",
+        "instrument_key": "NSE_FO|54579",
         "qty": 65,
         "side": "BUY",
-        "strike": 26450.0,
-        "entry_price": 409.05,
-        "expiry_dt": "2026-02-24",
+        "strike": 25100.0,
+        "entry_price": 399.0,
+        "expiry_dt": "2026-03-30",
         "type": "p"
     },
     "last_rollover_date": null

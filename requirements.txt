@@ -1,0 +1,8 @@
+scipy
+pandas
+requests
+numpy
+python-dotenv
+upstox-python-sdk
+colorama
+matplotlib
