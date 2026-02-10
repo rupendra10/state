@@ -366,5 +366,106 @@ class BatmanStrategy(BaseStrategy):
         }
         super().save_current_state(state) # Saves to json
 
+    def load_previous_state(self):
+        """
+        Loads state from persistent storage and restores class attributes.
+        """
+        state = super().load_previous_state()
+        
+        if state:
+            self.positions = state.get('positions', [])
+            self.adjustment_count = state.get('adjustment_count', 0)
+            
+            self.log(f"{Fore.CYAN}RECOVERY: Loaded {len(self.positions)} positions. Adj Count: {self.adjustment_count}{Style.RESET_ALL}")
+            return True
+        return False
+
     def pull_from_broker(self, broker_positions, master_df=None, silent=False):
-       pass 
+        """
+        Reconcile tracked positions with Broker/API positions.
+        Primary Goal: Detect manual exits or discrepancies.
+        """
+        if not self.positions:
+            return False
+            
+        if not broker_positions:
+            if not silent:
+                self.log(f"{Fore.RED}WARNING: Broker positions Empty/None. Assuming all positions closed? Skipping to be safe.{Style.RESET_ALL}")
+            # Identify if it's a real empty list vs None (Error)
+            if broker_positions is None: return False
+            # If it is [], it means really no positions.
+        
+        # Create a map of Broker Positions by Token for fast lookup
+        broker_map = {}
+        if broker_positions:
+            for p in broker_positions:
+                # Upstox returns 'instrument_token' or similar. 
+                # wrapper.py usually normalizes to object with attributes or dict
+                # Let's assume wrapper returns list of objects/dicts that have 'instrument_token' or 'instrument_key'
+                # wrapper.py get_positions() returns list of dicts usually?
+                # Let's check wrapper.py if unsure, but standardizing on 'instrument_token' is common.
+                # However, our system uses 'instrument_key' (NSE_FO|...)
+                
+                # Handling variation in Upstox response vs our normalized dict
+                p_key = p.get('instrument_token') or p.get('instrument_key') or p.get('token')
+                if p_key:
+                    broker_map[p_key] = p
+        
+        # Iterate over OUR tracked positions
+        active_positions = []
+        changes_detected = False
+        
+        for tracked in self.positions:
+            key = tracked['instrument_key']
+            
+            if key in broker_map:
+                broker_p = broker_map[key]
+                # Check Quantity
+                # Broker quantity is Net Intraday + Delivery? usually 'quantity' or 'net_quantity'
+                b_qty = broker_p.get('quantity')
+                if b_qty is None: b_qty = broker_p.get('net_quantity', 0)
+                
+                # Check Side (Net Qty > 0 BUY, < 0 SELL)
+                # Our tracked['qty'] is always positive, with tracked['side'] or inferred side.
+                # tracked position structure: {'qty': 50, 'side': 'BUY', ...}
+                
+                # Convert Broker Net Qty to absolute and side
+                b_net_qty = int(b_qty)
+                b_side = 'BUY' if b_net_qty > 0 else 'SELL'
+                b_abs_qty = abs(b_net_qty)
+                
+                if b_abs_qty == 0:
+                    # Position Closed in Broker
+                    self.log(f"{Fore.MAGENTA}RECONCILIATION: Position {tracked['leg']} ({key}) found CLOSED in broker. Removing.{Style.RESET_ALL}")
+                    changes_detected = True
+                    continue # Do not add to active_positions
+                
+                # Update Quantity if partial
+                if b_abs_qty != tracked['qty']:
+                    self.log(f"{Fore.YELLOW}RECONCILIATION: Qty Mismatch for {key}. Algo: {tracked['qty']}, Broker: {b_abs_qty}. Updating.{Style.RESET_ALL}")
+                    tracked['qty'] = b_abs_qty
+                    changes_detected = True
+                    
+                # Check Side Consistency (Rare flip)
+                # If we think we are Long, but broker says Short?
+                # tracked['side'] was added recently.
+                if 'side' in tracked and tracked['side'] != b_side:
+                     self.log(f"{Fore.RED}CRITICAL: Side Mismatch for {key}. Algo: {tracked['side']}, Broker: {b_side}. Updating.{Style.RESET_ALL}")
+                     tracked['side'] = b_side
+                     changes_detected = True
+                
+                active_positions.append(tracked)
+                
+            else:
+                # Tracked position NOT found in broker map
+                # Implies it was closed externally or expired?
+                self.log(f"{Fore.MAGENTA}RECONCILIATION: Position {tracked['leg']} ({key}) NOT FOUND in broker. Assuming Closed.{Style.RESET_ALL}")
+                changes_detected = True
+                # Do not add to active_positions
+        
+        if changes_detected:
+            self.positions = active_positions
+            self.save_state()
+            return True
+            
+        return False 

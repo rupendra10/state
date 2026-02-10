@@ -51,7 +51,10 @@ def sync_push(file_path):
         return False
         
     # Safety Check: strict restriction to state files only
-    if not file_path.endswith("_live_state.json") and not file_path.endswith("_state.json"):
+    # Safety Check: strict restriction to state files and trade logs
+    if not (file_path.endswith("_live_state.json") or 
+            file_path.endswith("_state.json") or 
+            "trade_log_" in file_path and file_path.endswith(".csv")):
         # print(f"[GIT SYNC] Skipping push for non-state file: {file_path}")
         return True
 

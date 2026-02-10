@@ -1,50 +1,3 @@
-2026-01-23 13:53:41 - [CalendarPEWeekly] Weekly Delta Update: 0.5166 (BROKER) | Key: NSE_FO|58666
-2026-01-23 13:53:41 - [CalendarPEWeekly] Monthly Delta Update: 0.7019 (BROKER) | Key: NSE_FO|64863
-2026-01-23 13:54:18 - [CalendarPEWeekly] Weekly Delta Update: 0.5007 (BROKER) | Key: NSE_FO|58666
-2026-01-23 13:54:18 - [CalendarPEWeekly] Monthly Delta Update: 0.7058 (BROKER) | Key: NSE_FO|64863
-2026-01-23 13:54:54 - [CalendarPEWeekly] Weekly Delta Update: 0.5051 (BROKER) | Key: NSE_FO|58666
-2026-01-23 13:54:54 - [CalendarPEWeekly] Monthly Delta Update: 0.7053 (BROKER) | Key: NSE_FO|64863
-2026-01-23 13:55:30 - [CalendarPEWeekly] Weekly Delta Update: 0.5049 (BROKER) | Key: NSE_FO|58666
-2026-01-23 13:55:30 - [CalendarPEWeekly] Monthly Delta Update: 0.6984 (BROKER) | Key: NSE_FO|64863
-2026-01-23 13:56:07 - [CalendarPEWeekly] Weekly Delta Update: 0.5190 (BROKER) | Key: NSE_FO|58666
-2026-01-23 13:56:07 - [CalendarPEWeekly] Monthly Delta Update: 0.7149 (BROKER) | Key: NSE_FO|64863
-2026-01-23 13:56:43 - [CalendarPEWeekly] Weekly Delta Update: 0.5152 (BROKER) | Key: NSE_FO|58666
-2026-01-23 13:56:43 - [CalendarPEWeekly] Monthly Delta Update: 0.7103 (BROKER) | Key: NSE_FO|64863
-2026-01-23 13:57:19 - [CalendarPEWeekly] Weekly Delta Update: 0.5081 (BROKER) | Key: NSE_FO|58666
-2026-01-23 13:57:19 - [CalendarPEWeekly] Monthly Delta Update: 0.7040 (BROKER) | Key: NSE_FO|64863
-2026-01-23 13:57:56 - [CalendarPEWeekly] Weekly Delta Update: 0.5204 (BROKER) | Key: NSE_FO|58666
-2026-01-23 13:57:56 - [CalendarPEWeekly] Monthly Delta Update: 0.7102 (BROKER) | Key: NSE_FO|64863
-2026-01-23 13:58:32 - [CalendarPEWeekly] Weekly Delta Update: 0.5256 (BROKER) | Key: NSE_FO|58666
-2026-01-23 13:58:32 - [CalendarPEWeekly] Monthly Delta Update: 0.7096 (BROKER) | Key: NSE_FO|64863
-2026-01-23 13:59:08 - [CalendarPEWeekly] Weekly Delta Update: 0.5115 (BROKER) | Key: NSE_FO|58666
-2026-01-23 13:59:08 - [CalendarPEWeekly] Monthly Delta Update: 0.6986 (BROKER) | Key: NSE_FO|64863
-2026-01-23 13:59:44 - [CalendarPEWeekly] Weekly Delta Update: 0.5179 (BROKER) | Key: NSE_FO|58666
-2026-01-23 13:59:44 - [CalendarPEWeekly] Monthly Delta Update: 0.7031 (BROKER) | Key: NSE_FO|64863
-2026-01-23 14:00:21 - [CalendarPEWeekly] Weekly Delta Update: 0.5207 (BROKER) | Key: NSE_FO|58666
-2026-01-23 14:00:21 - [CalendarPEWeekly] Monthly Delta Update: 0.7101 (BROKER) | Key: NSE_FO|64863
-2026-01-23 14:00:57 - [CalendarPEWeekly] Weekly Delta Update: 0.5174 (BROKER) | Key: NSE_FO|58666
-2026-01-23 14:00:57 - [CalendarPEWeekly] Monthly Delta Update: 0.7030 (BROKER) | Key: NSE_FO|64863
-2026-01-23 14:01:33 - [CalendarPEWeekly] Weekly Delta Update: 0.5183 (BROKER) | Key: NSE_FO|58666
-2026-01-23 14:01:33 - [CalendarPEWeekly] Monthly Delta Update: 0.7086 (BROKER) | Key: NSE_FO|64863
-2026-01-23 14:02:10 - [CalendarPEWeekly] Weekly Delta Update: 0.5203 (BROKER) | Key: NSE_FO|58666
-2026-01-23 14:02:10 - [CalendarPEWeekly] Monthly Delta Update: 0.7048 (BROKER) | Key: NSE_FO|64863
-2026-01-23 14:02:46 - [CalendarPEWeekly] Weekly Delta Update: 0.5032 (BROKER) | Key: NSE_FO|58666
-2026-01-23 14:02:46 - [CalendarPEWeekly] Monthly Delta Update: 0.6955 (BROKER) | Key: NSE_FO|64863
-2026-01-23 14:03:22 - [CalendarPEWeekly] Weekly Delta Update: 0.5062 (BROKER) | Key: NSE_FO|58666
-2026-01-23 14:03:22 - [CalendarPEWeekly] Monthly Delta Update: 0.7030 (BROKER) | Key: NSE_FO|64863
-2026-01-23 14:03:59 - [CalendarPEWeekly] Weekly Delta Update: 0.5002 (BROKER) | Key: NSE_FO|58666
-2026-01-23 14:03:59 - [CalendarPEWeekly] Monthly Delta Update: 0.6939 (BROKER) | Key: NSE_FO|64863
-2026-01-23 14:04:35 - [CalendarPEWeekly] Weekly Delta Update: 0.5000 (BROKER) | Key: NSE_FO|58666
-2026-01-23 14:04:35 - [CalendarPEWeekly] Monthly Delta Update: 0.6939 (BROKER) | Key: NSE_FO|64863
-2026-01-23 14:05:11 - [CalendarPEWeekly] Weekly Delta Update: 0.5001 (BROKER) | Key: NSE_FO|58666
-2026-01-23 14:05:11 - [CalendarPEWeekly] Monthly Delta Update: 0.6982 (BROKER) | Key: NSE_FO|64863
-2026-01-23 14:05:47 - [CalendarPEWeekly] Weekly Delta Update: 0.4994 (BROKER) | Key: NSE_FO|58666
-2026-01-23 14:05:47 - [CalendarPEWeekly] Monthly Delta Update: 0.6967 (BROKER) | Key: NSE_FO|64863
-2026-01-23 14:06:24 - [CalendarPEWeekly] Weekly Delta Update: 0.5160 (BROKER) | Key: NSE_FO|58666
-2026-01-23 14:06:24 - [CalendarPEWeekly] Monthly Delta Update: 0.7009 (BROKER) | Key: NSE_FO|64863
-2026-01-23 14:07:00 - [CalendarPEWeekly] Weekly Delta Update: 0.5154 (BROKER) | Key: NSE_FO|58666
-2026-01-23 14:07:00 - [CalendarPEWeekly] Monthly Delta Update: 0.7077 (BROKER) | Key: NSE_FO|64863
-2026-01-23 14:07:36 - [CalendarPEWeekly] Weekly Delta Update: 0.5088 (BROKER) | Key: NSE_FO|58666
 2026-01-23 14:07:36 - [CalendarPEWeekly] Monthly Delta Update: 0.7076 (BROKER) | Key: NSE_FO|64863
 2026-01-23 14:08:13 - [CalendarPEWeekly] Weekly Delta Update: 0.5103 (BROKER) | Key: NSE_FO|58666
 2026-01-23 14:08:13 - [CalendarPEWeekly] Monthly Delta Update: 0.7083 (BROKER) | Key: NSE_FO|64863
@@ -518,3 +471,58 @@
 2026-02-10 21:18:55 - [BatmanStrategy] Exited PE_WING: 23900 @ 100.0
 2026-02-10 21:18:55 - [BatmanStrategy] Exited PE_CORE: 23800 @ 100.0
 2026-02-10 21:18:55 - [BatmanStrategy] Exited CE_CORE_ADJ: 24100 @ 100.0
+2026-02-10 21:54:53 - [BatmanStrategy] Attempting Batman Strategy Entry at Spot 24000
+2026-02-10 21:54:53 - [BatmanStrategy] ENTRY: BUY 50 CE_HEDGE (24900) @ 100.0
+2026-02-10 21:54:53 - [BatmanStrategy] ENTRY: BUY 50 PE_HEDGE (23100) @ 100.0
+2026-02-10 21:54:53 - [BatmanStrategy] ENTRY: BUY 50 CE_WING (24100) @ 100.0
+2026-02-10 21:54:53 - [BatmanStrategy] ENTRY: BUY 50 PE_WING (23900) @ 100.0
+2026-02-10 21:54:53 - [BatmanStrategy] ENTRY: SELL 100 CE_CORE (24200) @ 100.0
+2026-02-10 21:54:53 - [BatmanStrategy] ENTRY: SELL 100 PE_CORE (23800) @ 100.0
+2026-02-10 21:54:59 - [BatmanStrategy] ADJUSTMENT TRIGGER: CE Core Combined Delta 0.30 < 0.4. Winning Leg Adjustment.
+2026-02-10 21:54:59 - [BatmanStrategy] Executing Adjustment #1 for CE Side.
+2026-02-10 21:54:59 - [BatmanStrategy] Square Off CE Core: 24200 @ 100.0
+2026-02-10 21:54:59 - [BatmanStrategy] ENTRY: SELL 100 CE_CORE_ADJ (24100) @ 100.0
+2026-02-10 21:54:59 - [BatmanStrategy] Rolled to New CE Core: 24100 (Delta 0.35)
+2026-02-10 21:55:01 - [BatmanStrategy] EXIT TRIGGER: T-1 (Day Before Expiry) at 15:00. Exiting Strategy.
+2026-02-10 21:55:01 - [BatmanStrategy] EXITING ALL POSITIONS: T-1_EXIT
+2026-02-10 21:55:01 - [BatmanStrategy] Exited CE_HEDGE: 24900 @ 100.0
+2026-02-10 21:55:01 - [BatmanStrategy] Exited PE_HEDGE: 23100 @ 100.0
+2026-02-10 21:55:01 - [BatmanStrategy] Exited CE_WING: 24100 @ 100.0
+2026-02-10 21:55:01 - [BatmanStrategy] Exited PE_WING: 23900 @ 100.0
+2026-02-10 21:55:01 - [BatmanStrategy] Exited PE_CORE: 23800 @ 100.0
+2026-02-10 21:55:01 - [BatmanStrategy] Exited CE_CORE_ADJ: 24100 @ 100.0
+2026-02-10 21:55:08 - [BatmanStrategy] RECONCILIATION: Position CE_WING (C_24500) NOT FOUND in broker. Assuming Closed.
+2026-02-10 21:55:08 - [BatmanStrategy] RECONCILIATION: Qty Mismatch for C_24700. Algo: 100, Broker: 50. Updating.
+2026-02-10 21:55:12 - [BatmanStrategy] ADJUSTMENT TRIGGER: CE Core Combined Delta 0.05 < 0.4. Winning Leg Adjustment.
+2026-02-10 21:55:12 - [BatmanStrategy] Executing Adjustment #1 for CE Side.
+2026-02-10 21:55:12 - [BatmanStrategy] Square Off CE Core: 24700 @ 100.0
+2026-02-10 21:55:12 - [BatmanStrategy] ENTRY: SELL 100 CE_CORE_ADJ (24100) @ 100.0
+2026-02-10 21:55:12 - [BatmanStrategy] Rolled to New CE Core: 24100 (Delta 0.35)
+2026-02-10 22:10:13 - [BatmanStrategy] Attempting Batman Strategy Entry at Spot 24000
+2026-02-10 22:10:18 - [BatmanStrategy] ENTRY: BUY 50 CE_HEDGE (24900) @ 100.0
+2026-02-10 22:10:21 - [BatmanStrategy] ENTRY: BUY 50 PE_HEDGE (23100) @ 100.0
+2026-02-10 22:10:23 - [BatmanStrategy] ENTRY: BUY 50 CE_WING (24100) @ 100.0
+2026-02-10 22:10:26 - [BatmanStrategy] ENTRY: BUY 50 PE_WING (23900) @ 100.0
+2026-02-10 22:10:29 - [BatmanStrategy] ENTRY: SELL 100 CE_CORE (24200) @ 100.0
+2026-02-10 22:10:31 - [BatmanStrategy] ENTRY: SELL 100 PE_CORE (23800) @ 100.0
+2026-02-10 22:10:35 - [BatmanStrategy] ADJUSTMENT TRIGGER: CE Core Combined Delta 0.30 < 0.4. Winning Leg Adjustment.
+2026-02-10 22:10:35 - [BatmanStrategy] Executing Adjustment #1 for CE Side.
+2026-02-10 22:10:38 - [BatmanStrategy] Square Off CE Core: 24200 @ 100.0
+2026-02-10 22:10:40 - [BatmanStrategy] ENTRY: SELL 100 CE_CORE_ADJ (24100) @ 100.0
+2026-02-10 22:10:40 - [BatmanStrategy] Rolled to New CE Core: 24100 (Delta 0.35)
+2026-02-10 22:10:43 - [BatmanStrategy] EXIT TRIGGER: T-1 (Day Before Expiry) at 15:00. Exiting Strategy.
+2026-02-10 22:10:43 - [BatmanStrategy] EXITING ALL POSITIONS: T-1_EXIT
+2026-02-10 22:10:47 - [BatmanStrategy] Exited CE_HEDGE: 24900 @ 100.0
+2026-02-10 22:10:50 - [BatmanStrategy] Exited PE_HEDGE: 23100 @ 100.0
+2026-02-10 22:10:53 - [BatmanStrategy] Exited CE_WING: 24100 @ 100.0
+2026-02-10 22:10:55 - [BatmanStrategy] Exited PE_WING: 23900 @ 100.0
+2026-02-10 22:10:58 - [BatmanStrategy] Exited PE_CORE: 23800 @ 100.0
+2026-02-10 22:11:01 - [BatmanStrategy] Exited CE_CORE_ADJ: 24100 @ 100.0
+2026-02-10 22:11:08 - [BatmanStrategy] RECONCILIATION: Position CE_WING (C_24500) NOT FOUND in broker. Assuming Closed.
+2026-02-10 22:11:08 - [BatmanStrategy] RECONCILIATION: Qty Mismatch for C_24700. Algo: 100, Broker: 50. Updating.
+2026-02-10 22:11:11 - [BatmanStrategy] ADJUSTMENT TRIGGER: CE Core Combined Delta 0.05 < 0.4. Winning Leg Adjustment.
+2026-02-10 22:11:11 - [BatmanStrategy] Executing Adjustment #1 for CE Side.
+2026-02-10 22:11:13 - [BatmanStrategy] Square Off CE Core: 24700 @ 100.0
+2026-02-10 22:11:17 - [BatmanStrategy] ENTRY: SELL 100 CE_CORE_ADJ (24100) @ 100.0
+2026-02-10 22:11:17 - [BatmanStrategy] Rolled to New CE Core: 24100 (Delta 0.35)
+2026-02-10 22:11:23 - [BatmanStrategy] RECOVERY: Loaded 1 positions. Adj Count: 1

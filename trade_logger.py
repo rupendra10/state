@@ -7,6 +7,7 @@ import config
 import logging
 from logging.handlers import RotatingFileHandler
 from collections import deque
+import git_utils
 
 class EventLogger:
     _instance = None
@@ -140,6 +141,9 @@ class TradeJournal:
             print(f"Log write error: {e}")
         if pnl is not None:
             self.closed_pnl += pnl
+
+        # Sync Log to Git
+        git_utils.sync_push(self.filename)
 
     def print_summary(self, open_pnl, strategy_state, broker_pnl=None):
         manual_adj = getattr(config, 'MANUAL_PNL_OFFSET', 0.0)

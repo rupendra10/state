@@ -147,5 +147,79 @@ def run_simulation():
     else:
         print("FAIL: T-1 Exit Not Triggered.")
 
+    # ---------------------------------------------------------
+    # SCENARIO 4: RECONCILIATION (Simulate Manual Exit)
+    # ---------------------------------------------------------
+    print("\n[SCENARIO 4] Checking Reconciliation (Manual Exit)...")
+    
+    # Reset State for clean test
+    strat.positions = [
+        {'instrument_key': 'C_24500', 'qty': 50, 'side': 'BUY', 'leg': 'CE_WING', 'strike': 24500, 'type': 'c'},
+        {'instrument_key': 'C_24700', 'qty': 100, 'side': 'SELL', 'leg': 'CE_CORE', 'strike': 24700, 'type': 'c'}
+    ]
+    strat.save_state()
+    
+    print(f"Initial Positions: {len(strat.positions)}")
+    
+    # Simulate Broker Data: C_24500 is missing (Closed manually), C_24700 exists (qty 50 - partial exit)
+    broker_positions = [
+         {'instrument_token': 'C_24700', 'quantity': -50, 'net_quantity': -50}
+    ]
+    
+    # Create market data with broker positions
+    market_data['broker_positions'] = broker_positions
+    
+    # Run Update (which calls pull_from_broker)
+    strat.update(market_data, mock_order)
+    
+    print(f"Final Positions: {len(strat.positions)}")
+    
+    # Checks
+    has_wing = any(p['instrument_key'] == 'C_24500' for p in strat.positions)
+    core = next((p for p in strat.positions if p['instrument_key'] == 'C_24700'), None)
+    
+    if not has_wing:
+        print("PASS: C_24500 correctly removed (Reconciliation).")
+    else:
+        print("FAIL: C_24500 should have been removed.")
+        
+    if core and core['qty'] == 50:
+         print("PASS: C_24700 qty updated to 50.")
+    else:
+         print(f"FAIL: C_24700 qty mismatch. Expected 50, Got {core['qty'] if core else 'None'}")
+
+
+    # ---------------------------------------------------------
+    # SCENARIO 5: STATE PERSISTENCE (Simulate Restart)
+    # ---------------------------------------------------------
+    print("\n[SCENARIO 5] Checking State Persistence/Restoral...")
+    
+    # 1. Setup State: 1 adj count, some positions
+    strat.adjustment_count = 1
+    strat.positions = [{'instrument_key': 'TEST_KEY', 'qty': 50, 'side': 'BUY', 'leg': 'TEST', 'strike': 10000, 'type': 'c'}]
+    strat.save_state() # Writes to file
+    
+    # 2. "Restart" - Create new instance
+    new_strat = BatmanStrategy()
+    
+    # 3. Load State
+    loaded = new_strat.load_previous_state()
+    
+    if loaded:
+        print("PASS: State Loaded.")
+    else:
+        print("FAIL: State Load Returned False.")
+        
+    if new_strat.adjustment_count == 1:
+        print("PASS: Adjustment Count Restored.")
+    else:
+        print(f"FAIL: Adjustment Count Mismatch. Expected 1, Got {new_strat.adjustment_count}")
+        
+    if len(new_strat.positions) == 1 and new_strat.positions[0]['instrument_key'] == 'TEST_KEY':
+        print("PASS: Positions Restored.")
+    else:
+        print("FAIL: Positions Not Restored Correctly.")
+
 if __name__ == "__main__":
     run_simulation()
+
